@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>音乐播放器</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/audio.js"></script>
+</head>
+<body>
+<div id="all-wrapper">
+    <div id="title">
+        <audio id="my-audio"></audio>
+        <div id="controls">
+            <button id="back"></button>
+            <button id="play-btn" name="play"></button>
+            <button id="forward"></button>
+        </div>
+        <div id="bar">
+            <div class="one-line">
+                <p id="waiting">等待播放</p>
+                <p id="time-length">00:00:00</p>
+            </div>
+            <div class="progress">
+                <div></div>
+                <p></p>
+            </div>
+            <div id="volume">
+                <button class="icon" id="icon-1"></button>
+                <div class="vprogress">
+                    <div></div>
+                </div>
+                <button class="icon" id="icon-2"></button>
+            </div>
+            <button id="enlarge"></button>
+        </div>
+    </div>
+    <div id="bg"></div>
+    <div id="main">
+        <div id="left">
+            <img src="images/05.jpg" alt="音乐专辑">
+        </div>
+        <div class="right">
+            <p title="musics/DZQ.mp3" class="active">邓紫棋 - 多远都要在一起</p>
+            <p title="musics/LRQSD.mp3">刘瑞琦 - 三度和弦</p>
+            <p title="musics/LRQWX.mp3">刘瑞琦 - 玩笑</p>
+            <p title="musics/JWQ.mp3">金玟岐 - 岁月神偷</p>
+            <p title="musics/Lovestoned.mp3">Lovestoned - Bye Bye Bye</p>
+            <p title="musics/RED.mp3">Red Velvet - 여시주의</p>
+        </div>
+    </div>
+
+</div>
+<!--<div id="test"></div>-->
+</body>
+</html>
