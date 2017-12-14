@@ -3,48 +3,40 @@
     padding: 0;
     border-style: none;
 }
-
 #all-wrapper {
     margin: 100px auto;
     width: 800px;
     height: 355px;
 }
-
 #all-wrapper #title {
     width: 800px;
     height: 50px;
     background: linear-gradient(to bottom, black, rgba(0, 1, 1, 0.6));
     margin-bottom: 2px;
 }
-
 #all-wrapper #title #controls {
     float: left;
     width: 150px;
     height: 50px;
 }
-
 #all-wrapper #title #controls button {
     display: inline-block;
     margin-top: 6px;
     width: 38px;
     height: 80%;
 }
-
 #all-wrapper #title #controls #back {
     background: url("images/sk-dark.png") no-repeat 5px 0;
     background-size: 160px 360px;
 }
-
 #all-wrapper #title #controls #play-btn {
     background: url("images/sk-dark.png") no-repeat -97px -140px;
     background-size: 140px 330px;
 }
-
 #all-wrapper #title #controls #forward {
     background: url("images/sk-dark.png") no-repeat 5px -75px;
     background-size: 160px 360px;
 }
-
 #all-wrapper #title #bar {
     float: right;
     position: relative;
@@ -52,14 +44,12 @@
     height: 100%;
     padding-top: 2px;
 }
-
 #all-wrapper #title #bar .one-line {
     display: flex;
     flex-direction: row;
     width: 60%;
     height: 30px;
 }
-
 #all-wrapper #title #bar .one-line #waiting {
     color: white;
     font-size: 15px;
@@ -68,7 +58,6 @@
     padding-top: 5px;
     margin-right: 150px;
 }
-
 #all-wrapper #title #bar .one-line #time-length {
     width: 100px;
     height: 100%;
@@ -76,22 +65,31 @@
     font-size: 15px;
     padding-top: 5px;
 }
-
 #all-wrapper #title #bar .progress {
     position: relative;
     height: 4px;
     width: 320px;
     background-color: #fff555;
+    cursor: pointer;
 }
 
-#all-wrapper #title #bar .progress div {
+#all-wrapper #title #bar .progress .pprogress {
     position: absolute;
+    height: 4px;
+    width: 0;
     top: -1px;
-    height: 2px;
     background-color: wheat;
     cursor: pointer;
 }
 
+#all-wrapper #title #bar .mode {
+    background: url("images/shunxu.png") no-repeat;
+    position: absolute;
+    top: 15px;
+    left: 340px;
+    width: 35px;
+    height: 35px;
+}
 #all-wrapper #title #bar #volume {
     position: absolute;
     top: 5px;
@@ -101,29 +99,34 @@
     width: 160px;
     height: 50px;
 }
-
 #all-wrapper #title #bar #volume .vprogress {
-    height: 2px;
+    position: relative;
+    height: 3px;
     width: 90px;
     margin-top: 20px;
     background-color: wheat;
+    cursor: pointer;
 }
 
+#all-wrapper #title #bar #volume .vprogress #v-bar {
+    position: absolute;
+    top: -1px;
+    height: 4px;
+    width: 45px;
+    background-color: #5ca64e;
+}
 #all-wrapper #title #bar #volume .icon {
     width: 30px;
     height: 30px;
     margin: 5px 0 10px 5px;
     background-color: red;
 }
-
 #all-wrapper #title #bar #volume #icon-1 {
     background: url("images/sk-dark.png") no-repeat -26px -216px;
 }
-
 #all-wrapper #title #bar #volume #icon-2 {
     background: url("images/sk-dark.png") no-repeat -24px -152px;
 }
-
 #all-wrapper #title #bar #enlarge {
     position: absolute;
     top: 15px;
@@ -133,25 +136,21 @@
     height: 30px;
     background: url("images/sk-dark.png") no-repeat -20px -30px;
 }
-
 #all-wrapper #main {
     position: relative;
     width: 800px;
     height: 300px;
     background-color: rgba(0, 0, 0, 0.8);
 }
-
 #all-wrapper #main #left {
     width: 280px;
     height: 280px;
     padding: 10px;
 }
-
 #all-wrapper #main #left img {
     width: 280px;
     height: 275px;
 }
-
 #all-wrapper #main .right {
     position: absolute;
     top: 2px;
@@ -160,13 +159,11 @@
     height: 500px;
     padding-top: 20px;
 }
-
 #all-wrapper #main .right .active {
     color: #FFA091;
     background-size: 20px 20px;
     background: url("images/music.svg") no-repeat 350px -8px;
 }
-
 #all-wrapper #main .right p {
     height: 40px;
     width: 400px;
@@ -174,16 +171,13 @@
     cursor: pointer;
     font-size: 16px;
 }
-
 #all-wrapper #bg {
     position: absolute;
     top: 154px;
-    left: 275px;
     width: 800px;
     height: 300px;
-    background-image: url("images/05.jpg");
+    background: url("images/05.jpg");
 }
-
 #test {
     width: 500px;
     height: 305px;

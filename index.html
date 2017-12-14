@@ -10,7 +10,7 @@
 <body>
 <div id="all-wrapper">
     <div id="title">
-        <audio id="my-audio"></audio>
+        <audio id="my-audio" preload="auto" class="normal" src="musics/DZQ.mp3"></audio>
         <div id="controls">
             <button id="back"></button>
             <button id="play-btn" name="play"></button>
@@ -22,13 +22,14 @@
                 <p id="time-length">00:00:00</p>
             </div>
             <div class="progress">
-                <div></div>
+                <div class="pprogress"></div>
                 <p></p>
             </div>
+            <div class="mode"></div>
             <div id="volume">
                 <button class="icon" id="icon-1"></button>
                 <div class="vprogress">
-                    <div></div>
+                    <div id="v-bar"></div>
                 </div>
                 <button class="icon" id="icon-2"></button>
             </div>
@@ -41,16 +42,21 @@
             <img src="images/05.jpg" alt="音乐专辑">
         </div>
         <div class="right">
-            <p title="musics/DZQ.mp3" class="active">邓紫棋 - 多远都要在一起</p>
-            <p title="musics/LRQSD.mp3">刘瑞琦 - 三度和弦</p>
-            <p title="musics/LRQWX.mp3">刘瑞琦 - 玩笑</p>
-            <p title="musics/JWQ.mp3">金玟岐 - 岁月神偷</p>
-            <p title="musics/Lovestoned.mp3">Lovestoned - Bye Bye Bye</p>
-            <p title="musics/RED.mp3">Red Velvet - 여시주의</p>
+            <p title="musics/DZQ.mp3" class="active" name="images/05.jpg">邓紫棋 - 多远都要在一起</p>
+            <p title="musics/LRQSD.mp3" name="images/LRQSD.jpg">刘瑞琦 - 三度和弦</p>
+            <p title="musics/LRQWX.mp3" name="images/LRQWX.jpg">刘瑞琦 - 玩笑</p>
+            <p title="musics/JWQ.mp3" name="images/JWQ.jpg">金玟岐 - 岁月神偷</p>
+            <p title="musics/Lovestoned.mp3" name="images/Lovestoned.jpg">Lovestoned - Bye Bye Bye</p>
+            <p title="musics/RED.mp3" name="images/RED.jpg">Red Velvet - 여시주의</p>
         </div>
     </div>
 
 </div>
-<!--<div id="test"></div>-->
+<!--<script type="text/javascript">-->
+<!--function minus() {-->
+<!--$("#my-audio")[0].volume=0;-->
+<!--}-->
+<!--</script>-->
 </body>
+
 </html>
